@@ -1,10 +1,7 @@
 import React, { useState } from 'react';
+import './App.css';
 
-
-
-
-
-export default function FormApp(){
+export default function App(){
   const[firstName, setFirstName] = useState('');
   const[lastName, setLastName] = useState('');
   const[email, setEmail] = useState('');
@@ -79,34 +76,6 @@ export default function FormApp(){
   )
 }
 
-// import SpeechRecognition, { useSpeechRecognition } from 'react-speech-recognition';
-
-// function App() {
-//   const [text, setText] = useState('');
-//   const { transcript, resetTranscript } = useSpeechRecognition();
-
-//   const startRecording = () => {
-//     SpeechRecognition.startListening({ continuous: true });
-//   };
-
-//   const stopRecording = () => {
-//     SpeechRecognition.stopListening();
-//     setText(transcript);
-//     resetTranscript();
-//   };
-
-//   return (
-//     <div>
-//       <h1> React Internship Assignment</h1>
-//       <textarea value={text} onChange={(e) => setText(e.target.value)} />
-//       <button onClick={startRecording}>Start Recording</button>
-//       <button onClick={stopRecording}>Stop Recording</button>
-//       <div>{transcript}</div>
-//     </div>
-//   );
-// }
-
-// export default App;
 
 
 
